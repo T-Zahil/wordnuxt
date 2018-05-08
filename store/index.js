@@ -1,10 +1,16 @@
 import Vuex from 'vuex'
+import * as getters from './getters'
+import * as actions from './actions'
+import mutations from './mutations'
 
 const store = () => {
   return new Vuex.Store( {
     state: {
-      page: {}
-    }
+      categories: {}
+    },
+    getters,
+    actions,
+    mutations
   } )
 }
 

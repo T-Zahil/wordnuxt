@@ -1,3 +1,4 @@
 export default {
-  baseUrl: "https://next.bdarts.org/wp-json/wp/v2/"
-};
+  baseUrl: "https://next.bdarts.org/wp-json/wp/v2/",
+  woocommerce: true
+}
