@@ -1,6 +1,6 @@
 <template>
   <div class='categories'>
-    <div v-for="item in categories" :key="item.id">
+    <div v-for="item in categories" :key="item.id" v-if="item.id > 1">
       <nuxt-link :to="slugToUrl(item.slug)">{{ item.name }}</nuxt-link>
     </div>
   </div>

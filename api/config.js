@@ -1,4 +1,4 @@
 export default {
-  baseUrl: "https://next.bdarts.org/wp-json/wp/v2/",
+  baseUrl: "http://wordnuxt.thomas-sanlis.com/?rest_route=/wp/v2/",
   woocommerce: true
 }
