@@ -30,10 +30,9 @@ module.exports = {
   axios: {},
   build: {
     extend( config, {
-      isDev,
-      isClient
+      isDev
     } ) {
-      if ( isDev && isClient ) {
+      if ( isDev && process.client ) {
         config.module.rules.push( {
           enforce: 'pre',
           test: /\.(js|vue)$/,
