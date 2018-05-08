@@ -25,6 +25,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/bulma'
   ],
   axios: {},
   build: {

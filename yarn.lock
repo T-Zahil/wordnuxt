@@ -87,6 +87,12 @@
     axios-retry "^3.0.2"
     consola "^1.1.4"
 
+"@nuxtjs/bulma@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/bulma/-/bulma-1.2.0.tgz#c558a01e78252046b9efa7aa642616dc8725c0a5"
+  dependencies:
+    bulma "^0.7.1"
+
 "@nuxtjs/proxy@^1.2.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@nuxtjs/proxy/-/proxy-1.2.4.tgz#41aafac58854f14e28aed17238936bb6404e6071"
@@ -1093,6 +1099,10 @@ builtin-modules@^1.0.0:
 builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
+
+bulma@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.1.tgz#73c2e3b2930c90cc272029cbd19918b493fca486"
 
 bytes@3.0.0:
   version "3.0.0"
