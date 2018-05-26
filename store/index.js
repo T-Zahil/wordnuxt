@@ -6,7 +6,12 @@ import mutations from './mutations'
 const store = () => {
   return new Vuex.Store( {
     state: {
-      categories: {}
+      categories: {},
+      category: {
+        id: null,
+        name: null,
+        slug: null
+      },
     },
     getters,
     actions,

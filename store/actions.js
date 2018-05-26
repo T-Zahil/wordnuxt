@@ -1,5 +1,8 @@
 import api from '../api/index'
 
+/* * * *
+ * GET CATEGORIES
+ * * * */
 export const getCategories = ( {
   commit,
   state
@@ -17,3 +20,23 @@ export const getCategories = ( {
     )
   } )
 }
+
+/* * * *
+ * GET ONE CATEGORY
+ * * * */
+export const getCategory = ( {
+  commit,
+  state
+}, slug ) => {
+  return new Promise( ( resolve, reject ) => {
+    api.getCategory( slug ).then(
+      response => {
+        commit( "CATEGORY", response );
+        resolve( response );
+      },
+      response => {
+        reject( response );
+      }
+    );
+  } );
+};
