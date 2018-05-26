@@ -1,8 +1,8 @@
 {
   "name": "wordnuxt",
   "version": "1.0.0",
-  "description": "{{ description }}",
-  "author": "{{ author }}",
+  "description": "Wordpress + NuxtJS starter kit",
+  "author": "Thomas Sanlis",
   "private": true,
   "scripts": {
     "dev": "nuxt",
