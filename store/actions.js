@@ -31,12 +31,32 @@ export const getCategory = ( {
   return new Promise( ( resolve, reject ) => {
     api.getCategory( slug ).then(
       response => {
-        commit( "CATEGORY", response );
-        resolve( response );
+        commit( "CATEGORY", response )
+        resolve( response )
       },
       response => {
-        reject( response );
+        reject( response )
       }
-    );
-  } );
-};
+    )
+  } )
+}
+
+/* * * *
+ * GET ALL POSTS
+ * * * */
+export const getPosts = ( {
+  commit,
+  state
+} ) => {
+  return new Promise( ( resolve, reject ) => {
+    api.getPosts().then(
+      response => {
+        commit( "POSTS", response )
+        resolve( response )
+      },
+      response => {
+        reject( response )
+      }
+    )
+  } )
+}

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <theMenu></theMenu>
     <section class="hero is-info is-medium is-bold">
       <div class="hero-body">
         <div class="container has-text-centered">
@@ -17,12 +16,7 @@
 </template>
 
 <script>
-import theMenu from '../components/menu'
-
 export default {
-  components: {
-    theMenu
-  },
   created() {
     // init categories
     this.$store.dispatch('getCategories')
